@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Buy This Domain - Make An Offer $$</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h4>For Sale by Owner</h4>
+        <p>Fill out this form with your contact info and a price offer. If your offer is reasonable I will reach out to you to finish the deal. Cheers!</p>
+        <form action="save_offer.php" method="post">
+          <input type="hidden" name="domain" id="domain" value="">
+          <label>Name:</label> <input type="text" name="name"> <br/>
+          <label>Email:</label> <input type="text" name="email"> <br/>
+          <label>Phone:</label> <input type="text" name="phone"> <br/>
+          <label>Price Offer:</label> <input type="text" name="price"> <br/>
+          <label>All Done!</label><input type="submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script type="text/javascript">
+    var d = document.getElementById("domain");
+    d.value = window.location.hostname;
+  </script>
+</body>
+</html>
